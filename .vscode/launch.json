@@ -1,0 +1,26 @@
+{
+  "version": "0.2.0",
+  "configurations": [       
+
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Debug Program",
+      "program": "${workspaceFolder}/server.js",
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "NODE_ENV": "development",
+        "UVI_HOST":"0.0.0.0",
+        "UVI_PORT":"1310",
+        "DATABASE_HOST": "0.0.0.0",
+        "DATABASE_PORT": "27010",
+        "DATABASE_NAME": "strapi-dev",
+        "DATABASE_USERNAME":"",
+        "DATABASE_PASSWORD":"",
+        "DATABASE_AUTHENTICATION_DATABASE":"",
+        "UVI_CEPH_DEFAULT": "${workspaceFolder}/cephfs_public"
+      },
+      "outputCapture": "std"
+    }
+  ]
+}
